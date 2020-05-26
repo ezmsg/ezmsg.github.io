@@ -1,14 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <title>EZmsg</title>
+  <title>ezmsg</title>
 </head>
 
-<body>
+<body style="height: 100%;">
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -26,18 +26,28 @@ function fixFormUrl() {
 }
 
 </script>
-<div class="container">
+<div class="container-sm d-flex align-items-center flex-column justify-content-center h-100">
   <form id="form">
-    <h2>Send Whatsapp to:</h2>
+    <h2>Start a new conversation</h2>
     <div class="form-row align-items-center">
       <div class="col-auto my-1">
         <input class="form-control" type="number" id="phone" placeholder="Enter phone number">
       </div>
       <div class="col-auto my-1">
-        <input class="btn btn-primary" onclick="fixFormUrl()" type="submit" value="Go" />
+        <input class="btn btn-primary" onclick="fixFormUrl()" type="submit" value="Whatsapp" />
       </div>
     </div>
   </form>
+  <div class="col-12 col-md-6">
+    <div class="jumbotron">
+      <p class="lead">
+        No need to add people to your contact anymore.
+      </p>
+      <p>
+        Just type their phone number and click Go and you'll get a new conversation in your Whatapp app.
+      </p>
+    </div>
+  </div>
 </div>
 </body>
 </html>
