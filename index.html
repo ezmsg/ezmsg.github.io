@@ -16,7 +16,12 @@
 <script type="text/javascript">
 
 function fixFormUrl() {
-    phone = document.getElementById('phone').value.replace(/^(\+)/, '');
+    phone = document.getElementById('phone').value
+      .replace(/^(\+)/, '')
+      .replace(/(-)/, '')
+      .replace(/^(05)/, '9725') // Assume Israel
+      .replace(/^(97205)/, '9725') // Fix 05 prefix for israeli numbers.
+      ;
     document.getElementById('form').action = 'https://wa.me/' + phone;
 }
 
